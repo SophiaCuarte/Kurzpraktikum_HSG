@@ -1,25 +1,31 @@
-﻿namespace Aufgabe2
+﻿using System;
+
+namespace IbanNummer
 {
-    using System;
-    using System.Text;
-
-    class Program
+    public class Program
     {
-        static void Main()
+        public static void Main(string[] args)
         {
-            
-            string country = "";
+            Console.WriteLine("IBAN-Berechnung");
 
-            int bankCode = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("bitte geben Sie ihren Bank Code ein: ", bankCode);
+            Console.Write("Geben Sie eine Zeichenkette ein (z.B., DE): ");
+            string input = Console.ReadLine();
 
-            int accountNumber = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Bitte geben Sie ihre Accountnummer ein: ", accountNumber);
+            AsciiConverter converter = new AsciiConverter();
+            string asciiValues = converter.GetAsciiValue(input);
 
-            Console.WriteLine("Geben sie ihre Land Erkennung ein (z.B. DE): ", country);
-            country = Console.ReadLine();
+            Console.Write("Bankleitzahl: ");
+            string bankleitzahl = Console.ReadLine();
 
-            Console.WriteLine("ihre Iban: {0} {1} {2} ", bankCode, accountNumber, country);
+            Console.Write("Kontonummer: ");
+            string kontonummer = Console.ReadLine();
+
+            ModuloCalc moduloCalculator = new ModuloCalc();
+            string moduloResult = moduloCalculator.CalcModulo(bankleitzahl, kontonummer, asciiValues);
+
+            string iban = $"{input}{moduloResult}{bankleitzahl}{kontonummer}";
+
+            Console.WriteLine($"Die IBAN lautet: {iban}");
         }
     }
 }

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aufgabe1Test", "Aufgabe1Tes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IbanNummer", "Aufgabe2\IbanNummer.csproj", "{5CEF19EC-5B28-44B2-9534-4B4796A10CD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IbanNummerTest", "IbanNummerTest\IbanNummerTest.csproj", "{58FB62D3-B952-4C8D-B631-46CF50CF1E00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5CEF19EC-5B28-44B2-9534-4B4796A10CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CEF19EC-5B28-44B2-9534-4B4796A10CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CEF19EC-5B28-44B2-9534-4B4796A10CD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58FB62D3-B952-4C8D-B631-46CF50CF1E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58FB62D3-B952-4C8D-B631-46CF50CF1E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58FB62D3-B952-4C8D-B631-46CF50CF1E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58FB62D3-B952-4C8D-B631-46CF50CF1E00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
