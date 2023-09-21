@@ -1,7 +1,7 @@
 namespace IndexPlantsFurnitureTest
 {
     [TestClass]
-    public class UnitTest1
+    public class IndexPlantsTest
     {
         [TestMethod]
         public void TestMethod1()

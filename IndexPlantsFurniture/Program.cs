@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace IndexPlantsFurniture
 {
-    public class Example
+    public class IndexPlants
     {
         public static void Main()
         {
