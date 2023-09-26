@@ -7,12 +7,10 @@ namespace UmlToCode
     {
         public string Name { get; set; }
         public int Wage { private get; set; }
-        public int salary { get; set; }
 
-        public int GetSalary(Manager manager)
+        public int GetWage()
         {
-            manager.salary = Wage + manager.Bonus;
-            return manager.salary;
+            return Wage;
         }
 
     }

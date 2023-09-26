@@ -6,13 +6,12 @@ namespace UmlToCode
     {
         public int Bonus { get; set; }
 
-        public int Salary { get; set; }
+        private int Salary { get; set; }
 
-
-        //public int GetWage()
-        //{
-        //    int salary = Wage + Bonus;
-        //    return salary;
-        //}
+        public int GetSalary()
+        {
+            Salary = GetWage() + Bonus;
+            return Salary;
+        }
     }
 }

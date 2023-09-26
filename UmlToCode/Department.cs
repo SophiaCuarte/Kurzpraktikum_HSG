@@ -19,7 +19,7 @@ namespace UmlToCode
             int WagesBill = 0;
             foreach (var employee in Employed)
             {
-                WagesBill += employee.Wage;
+                WagesBill += employee.GetWage();
             }
             if (Manager != null)
             {

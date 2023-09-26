@@ -20,7 +20,7 @@ namespace UmlToCode
 
             int expectedresult = 110;
 
-            int result = manager.GetWage;
+            int result = manager.GetSalary();
 
             Assert.AreEqual(expectedresult, result);
         }
